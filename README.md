@@ -1,6 +1,6 @@
-# Appconf
+# Confapp
 
-Python library to provide settings files for modular applications
+Library to be used as a singleton to manages modules and applications configurations.
 
 
 ## How to use
@@ -36,7 +36,7 @@ MODULE_X_SETTINGS_1 = 1
 module-x/module_x/\_\_init\_\_.py
 ```python
 
-from appconf import conf; 
+from confapp import conf; 
 conf += 'module_x.settings'
 
 class X:
@@ -53,7 +53,7 @@ MODULE_Y_SETTINGS_1 = 2
 module-y/module_y/\_\_init\_\_.py
 ```python
 
-from appconf import conf;
+from confapp import conf;
 from module_y import settings
 conf += settings
 
@@ -72,7 +72,7 @@ MODULE_X_SETTINGS_0 = 'overwritten'
 
 
 ```python
-from appconf import conf
+from confapp import conf
 conf += 'app.settings'
 
 from module_x import X
