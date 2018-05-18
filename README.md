@@ -7,7 +7,7 @@ Python library to provide settings files for modular applications
 
 Image an application that uses the modules 'module_x' and 'module_y' as depences, which one with their own default settings.
 
-
+```
 module-x
     ├── module_x
     │   ├── __init__.py
@@ -24,6 +24,7 @@ app
     ├── __init__.py
     ├── __main__.py
     ├── settings.py
+```
     
 module-x/module_x/settings.py
 ```python
@@ -32,7 +33,7 @@ MODULE_X_SETTINGS_0 = 'something'
 MODULE_X_SETTINGS_1 = 1
 
 ```
-module-x/module_x/__init__.py
+module-x/module_x/\_\_init\_\_.py
 ```python
 
 from appconf import conf; 
@@ -49,7 +50,7 @@ MODULE_Y_SETTINGS_0 = 'else'
 MODULE_Y_SETTINGS_1 = 2
 
 ```
-module-y/module_y/__init__.py
+module-y/module_y/\_\_init\_\_.py
 ```python
 
 from appconf import conf;
