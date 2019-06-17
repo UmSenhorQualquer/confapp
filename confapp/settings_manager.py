@@ -23,7 +23,7 @@ class SettingsManager(object):
 
 		modules = object.__getattribute__(self, '_modules')
 		if other not in modules:
-			logger.info('added settings: {0}'.format(other.__name__))
+			logger.debug('+ SETTINGS: {0:50}'.format(other.__name__))
 			modules.append(other)
 			self._modules = sorted(modules, key=lambda x: (x.SETTINGS_PRIORITY if hasattr(x, 'SETTINGS_PRIORITY') else 999999999)  )
 		return self
