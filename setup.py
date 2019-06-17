@@ -10,7 +10,6 @@ setup(
 	packages=find_packages(),
 	include_package_data=True,
 	description='Python library that implements a singleton object to use as settings system.',
-	long_description=README,
 	url='https://github.com/UmSenhorQualquer/confapp',
 	author='Ricardo Jorge Vieira Ribeiro',
 	author_email='ricardojvr@gmail.com',
